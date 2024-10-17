@@ -1,0 +1,6 @@
+print("Welcome to the Sales Tax Remover")
+sales_tax = input("Please enter your sales tax as a decimal value:")
+receipt_total = input("Please enter the total of the receipt:$")
+actual_total = float(receipt_total) / (1 + float(sales_tax))
+
+print(f"Your amount before tax is:$ {round(actual_total, 2)}")
